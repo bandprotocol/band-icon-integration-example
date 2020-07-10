@@ -1,13 +1,13 @@
 from iconservice import *
 
-TAG = 'EXAMPLE_SCORE'
+TAG = 'ICX_DB'
 
 class BAND_PRICE_SCORE(InterfaceScore):
     @interface
     def get_price_info(self,symbol: str) -> dict:
         pass
 
-class EXAMPLE_SCORE(IconScoreBase):
+class ICX_DB(IconScoreBase):
     def __init__(self, db: IconScoreDatabase) -> None:
         super().__init__(db)
 
